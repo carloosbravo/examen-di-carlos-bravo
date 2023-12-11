@@ -30,7 +30,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="The Indian Fooder"
-        android:textSize="30dp"
+        android:textSize="40dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,7 +49,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="513dp" />
+        app:layout_constraintGuide_begin="476dp" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/textInputLayout"
@@ -75,12 +75,35 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.327"
         app:startIconDrawable="@drawable/ic_llave">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/passwordTextInputAcceder"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Introduce tu contraseña" />
+            android:hint="Introduce tu contraseña"
+            android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnAcceder"
+        android:layout_width="158dp"
+        android:layout_height="53dp"
+        android:onClick="changeToMain"
+        android:text="Acceder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="154dp"
+        android:layout_height="55dp"
+        android:onClick="changeToRegistro"
+        android:text="Registro"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAcceder" />
 </androidx.constraintlayout.widget.ConstraintLayout>
