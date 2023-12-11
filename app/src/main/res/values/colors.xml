@@ -2,4 +2,8 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="principalFondoBeis">#e8d5b7</color>
+    <color name="principalFondoAzulMarinoOscuro">#0e2430</color>
+    <color name="principalFondoBeisClarito">#e8d5b9</color>
+    <color name="RojitoIndio">#fc3a51</color>
 </resources>
